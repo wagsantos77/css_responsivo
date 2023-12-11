@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px 0 0;
+    margin-bottom: 54px;
+    background-color: blue;
+    font-style: italic;
+    color: #fff;
+}
+
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a {
+    color: #f5f6fa;
+    text-decoration: none;
+}
+
+header .container a {
+    color: #fff;
+    font-size: 1em;
+    font-style: italic;
+    padding: 0% 0;
+    margin-bottom: 12px;
+    margin: auto auto;
+    justify-content: space-between;
+    display: inline;
+    font-weight: bold;
+}
+
+.conteudo {
+    display: flex;
+    font-size: 1.3em;
+}
+
+.produto img {
+    max-width: 100%;
+}
+
+.sobre {
+    margin-bottom: 56px;
+}
+
+.sobre .loja {
+    display: flex;
+    
+}
+
+.sobre .loja img {
+    margin-right: 8px;
+    display: flex;
+    max-width: 100%;
+} 
+
+.sobre .loja h2 {
+    margin-right: 8px;
+    font-size: 1.5em;
+    max-width: 100%;
+    border-bottom: 1px solid #fff;
+}
+
+section h1 {
+    margin-bottom: 32px;
+}
+
+section h2 {
+    margin-bottom: 32px;
+}
+
+.produto h1 {
+    margin-bottom: 16px;
+}
+
+.produto h2 {
+    max-width: 100%;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.produto h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.produtos button {
+    background-color: blue;
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.produtos {
+    grid-template-columns: repeat(4, 25%);
+    display: grid;
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+@media screen and (max-width: 767px) {
+    .container .conteudo {
+        display: block;
+        max-width: 90%;
+    }
+
+    .sobre .loja {
+        display: block;
+        font-size: 1.2em;
+    }
+    
+    .sobre .loja img {
+        margin-right: 0;
+        margin-bottom: 32px;
+    }
+
+    .produtos {
+        display: block;
+    }
+
+    .produtos button {
+        width: 85%;
+    } 
+    
+    .produtos .produto {
+        margin-bottom: 32px;
+    }
+
+    header div.container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+        align-items: center;
+    }
+
+    .sobre .loja {
+        font-size: 1em;
+        display: block;
+        
+    }
+
+    .sobre .loja img {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    header {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .produto {
+        grid-template-columns: repeat(2, 49%);
+    }
+} 
